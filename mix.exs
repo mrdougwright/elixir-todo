@@ -14,7 +14,8 @@ defmodule Todo.Mixfile do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :sqlite_ecto, :ecto, :cowboy, :plug]
+      applications: [:logger, :sqlite_ecto, :ecto, :cowboy, :plug],
+      mod: {Todo.App, []}
     ]
   end
 
