@@ -20,6 +20,9 @@ use Mix.Config
 #
 #     config :logger, level: :info
 #
+config :todo, Todo.Repo,
+  adapter: Sqlite.Ecto,
+  database: "todo.sqlite3"
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment
