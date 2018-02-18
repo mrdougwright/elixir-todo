@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>List Information Page</h1>
+    <p>You have requested list item with id <%= list_item %>.</p>
+  </body>
+</html>
