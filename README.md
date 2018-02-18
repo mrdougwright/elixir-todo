@@ -41,3 +41,5 @@ Todo.Repo.start_link
 item = %Todo.List{id: 1, name: "elixir homework", body: "finish this tutorial"}
 Todo.Repo.insert!(item)
 ```
+
+https://codewords.recurse.com/issues/five/building-a-web-framework-from-scratch-in-elixir
