@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>New Item</h1>
+    <form action="/create" method="POST">
+      <p>
+        Name:<br/>
+        <input type="text" name="name">
+      </p>
+      <p>
+        Body:<br/>
+        <input type="text" name="body">
+      </p>
+      <p>
+        <input type="submit" value="Create new todo item">
+      </p>
+    </form>
+  </body>
+</html>

@@ -17,6 +17,7 @@ defmodule Todo.App do
     opts = [strategy: :one_for_one, name: Todo.App.Supervisor]
     Supervisor.start_link(children, opts)
     IO.puts "Server running...\n"
-    {:ok, pid} = Plug.Adapters.Cowboy.http Todo, []
+    IO.puts "http://localhost:3030/hello"
+    {:ok, pid} = Plug.Adapters.Cowboy.http Todo, [], port: 3030
   end
 end

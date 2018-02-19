@@ -9,4 +9,9 @@ defmodule Todo.List do
 
     timestamps()
   end
+
+  def changeset(item, params \\ %{}) do
+    item
+    |> cast(params, [:name, :body])
+  end
 end
